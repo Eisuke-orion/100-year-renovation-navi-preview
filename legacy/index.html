@@ -7,6 +7,7 @@
 <link href="css/column-overrides.css" rel="stylesheet" />
 <script src="js/jquery-2.2.4.min.js"></script>
 <script src="js/common.js"></script>
+<script src="js/column-publication.js" defer></script>
 <title>ちょっと深い住まいの話｜暮らしを編む。住まいから、これからへ</title>
 <meta name="description" content="住まいの価値観から、片づけ、家族構成の変化、実家じまい、防災まで。住宅と教育の専門家エイスケが、暮らしのこれからを考えるコラムです。">
 <meta property="og:title" content="ちょっと深い住まいの話｜暮らしを編む。住まいから、これからへ">
@@ -123,16 +124,16 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script>
 const EPISODES = [
-  { n: '1', href: 'column-01.dc.html', title: '家は資産か、負債か。暮らしから考える住まいの価値', excerpt: 'ー「よりよい住まいを」本当に価値ある家とは？連載の総論です。', category: '資産・お金', date: '2026年8月10日', thumb: 'uploads/ep01_fv_asset_value_home.png' },
-  { n: '2', href: 'column-02.dc.html', title: '片づかないのは、あなたのせいじゃない。収納と動線で変わる家', excerpt: '『人生がときめく片づけの魔法』に、工務店の視点を一つ足す。', category: '片づけ・収納', date: '2026年8月18日', thumb: 'uploads/ep02_fv_storage_flow_v2.png' },
-  { n: '3', href: 'column-03.dc.html', title: '家族の気配が通う家。子どもと暮らす住まいの考え方', excerpt: '家族の気配が通う間取りと、子どもの育ちを支える住まいを考える。', category: '家族・子育て', date: '2026年8月20日', thumb: 'uploads/ep04_fv_family_connection_living_stairs.png' },
-  { n: '4', href: 'column-04.dc.html', title: '実家じまいは、親が元気なうちに。家族で考えるこれからの住まい', excerpt: '空き家900万戸時代の、一番現実的な備え。', category: '実家・空き家', date: '2026年8月25日', thumb: 'uploads/ep05_fv_family_home_closure.png' },
-  { n: '5', href: 'column-05.dc.html', title: 'マンションの老いにどう備えるか。長く暮らすための住まいの条件', excerpt: '「限界マンション」という次の空き家問題。', category: '実家・空き家', date: '2026年8月27日', thumb: 'uploads/ep06_fv_long_life_condominium.png' },
-  { n: '6', href: 'column-06.dc.html', title: '「夏をむねとすべし」は今も正解？一年を通じて快適な家', excerpt: '年間の断熱・気密と夏の日射対策を組み合わせる。', category: '省エネ・快適', date: '2026年9月1日', thumb: 'uploads/ep07_fv_cool_summer_home.png' },
-  { n: '7', href: 'column-07.dc.html', title: 'リフォームで失敗しないために。見積もりと業者選びの基本', excerpt: '「適正価格」を見抜き、信頼できる業者と出会うために。', category: 'リフォーム・業者選び', date: '2026年9月3日', thumb: 'uploads/ep08_fv_trusted_remodeling_consultation.png' },
-  { n: '8', href: 'column-08.dc.html', title: '電気代が高く感じられる理由。窓と家電から始める節電', excerpt: '構造的な理由と、我が家でできる本気の節電。', category: '省エネ・快適', date: '2026年9月8日', thumb: 'uploads/ep09_fv_electricity_costs_home.png' },
-  { n: '9', href: 'column-09.dc.html', title: '台風の前に、家族で決めておくこと。家の外・中・避難の備え', excerpt: '怖がるためではなく、「備えておいたから大丈夫」と思える暮らしのために。', category: '防災', date: '2026年9月10日', thumb: 'uploads/ep10_fv_typhoon_preparation_disaster_prevention.png' },
-  { n: '10', href: 'column-10.dc.html', title: '50代から考える、家族構成の変化に対応できる住まい', excerpt: '子育て期の役割を終えた家を、夫婦の居場所、親との関わり、短い動線に合わせて使い直す。', category: '家族・間取り', date: '調整中', thumb: 'uploads/ep10_fv_next_stage_living.png' },
+  { n: '1', href: 'column-01.dc.html', title: '家は資産か、負債か。暮らしから考える住まいの価値', excerpt: 'ー「よりよい住まいを」本当に価値ある家とは？連載の総論です。', category: '資産・お金', date: window.ColumnPublication.displayDate('column-01.dc.html'), thumb: 'uploads/ep01_fv_asset_value_home.png' },
+  { n: '2', href: 'column-02.dc.html', title: '片づかないのは、あなたのせいじゃない。収納と動線で変わる家', excerpt: '『人生がときめく片づけの魔法』に、工務店の視点を一つ足す。', category: '片づけ・収納', date: window.ColumnPublication.displayDate('column-02.dc.html'), thumb: 'uploads/ep02_fv_storage_flow_v2.png' },
+  { n: '3', href: 'column-03.dc.html', title: '家族の気配が通う家。子どもと暮らす住まいの考え方', excerpt: '家族の気配が通う間取りと、子どもの育ちを支える住まいを考える。', category: '家族・子育て', date: window.ColumnPublication.displayDate('column-03.dc.html'), thumb: 'uploads/ep04_fv_family_connection_living_stairs.png' },
+  { n: '4', href: 'column-04.dc.html', title: '実家じまいは、親が元気なうちに。家族で考えるこれからの住まい', excerpt: '空き家900万戸時代の、一番現実的な備え。', category: '実家・空き家', date: window.ColumnPublication.displayDate('column-04.dc.html'), thumb: 'uploads/ep05_fv_family_home_closure.png' },
+  { n: '5', href: 'column-05.dc.html', title: 'マンションの老いにどう備えるか。長く暮らすための住まいの条件', excerpt: '「限界マンション」という次の空き家問題。', category: '実家・空き家', date: window.ColumnPublication.displayDate('column-05.dc.html'), thumb: 'uploads/ep06_fv_long_life_condominium.png' },
+  { n: '6', href: 'column-06.dc.html', title: '「夏をむねとすべし」は今も正解？一年を通じて快適な家', excerpt: '年間の断熱・気密と夏の日射対策を組み合わせる。', category: '省エネ・快適', date: window.ColumnPublication.displayDate('column-06.dc.html'), thumb: 'uploads/ep07_fv_cool_summer_home.png' },
+  { n: '7', href: 'column-07.dc.html', title: 'リフォームで失敗しないために。見積もりと業者選びの基本', excerpt: '「適正価格」を見抜き、信頼できる業者と出会うために。', category: 'リフォーム・業者選び', date: window.ColumnPublication.displayDate('column-07.dc.html'), thumb: 'uploads/ep08_fv_trusted_remodeling_consultation.png' },
+  { n: '8', href: 'column-08.dc.html', title: '電気代が高く感じられる理由。窓と家電から始める節電', excerpt: '構造的な理由と、我が家でできる本気の節電。', category: '省エネ・快適', date: window.ColumnPublication.displayDate('column-08.dc.html'), thumb: 'uploads/ep09_fv_electricity_costs_home.png' },
+  { n: '9', href: 'column-09.dc.html', title: '台風の前に、家族で決めておくこと。家の外・中・避難の備え', excerpt: '怖がるためではなく、「備えておいたから大丈夫」と思える暮らしのために。', category: '防災', date: window.ColumnPublication.displayDate('column-09.dc.html'), thumb: 'uploads/ep10_fv_typhoon_preparation_disaster_prevention.png' },
+  { n: '10', href: 'column-10.dc.html', title: '50代から考える、家族構成の変化に対応できる住まい', excerpt: '子育て期の役割を終えた家を、夫婦の居場所、親との関わり、短い動線に合わせて使い直す。', category: '家族・間取り', date: window.ColumnPublication.displayDate('column-10.dc.html'), thumb: 'uploads/ep10_fv_next_stage_living.png' },
 ];
 const PAGE_SIZE = 10;
 
