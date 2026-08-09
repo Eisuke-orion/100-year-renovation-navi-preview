@@ -71,8 +71,10 @@
 
     for (const section of sections) {
       let visibleInSection = 0;
+      const parsedLimit = Number.parseInt(section.dataset.relatedLimit || "", 10);
+      const linkLimit = Number.isInteger(parsedLimit) && parsedLimit > 0 ? parsedLimit : Number.POSITIVE_INFINITY;
       for (const link of section.querySelectorAll("a[href]")) {
-        const visible = isPublished(link.getAttribute("href"), asOf);
+        const visible = isPublished(link.getAttribute("href"), asOf) && visibleInSection < linkLimit;
         link.hidden = !visible;
         if (visible) {
           link.removeAttribute("aria-hidden");

@@ -52,14 +52,13 @@
   details > summary::-webkit-details-marker { display:none; }
   details > summary:hover { background:oklch(0.98 0.02 150); }
   details[open] .faq-chevron { transform:rotate(45deg); }
-  .column-image-note { font-size:12.5px; line-height:1.7; color:oklch(0.5 0.015 90); margin:8px 4px 0; }
 </style>
 </helmet>
 <?php include 'parts_header.html'; ?>
 <?php include 'parts_nav.html'; ?>
 <dc-import name="SiteHeader" hint-size="100%,120px"></dc-import>
 
-<main style="font-family:'Noto Sans JP',sans-serif; color: oklch(0.27 0.015 90); max-width:760px; margin:0 auto; padding:0 24px 100px;">
+<div style="font-family:'Noto Sans JP',sans-serif; color: oklch(0.27 0.015 90); max-width:760px; margin:0 auto; padding:0 24px 100px;">
 
   <nav class="column-breadcrumb" aria-label="パンくず" style="display:flex; align-items:center; gap:8px; padding:26px 0 6px; font-size:13.5px; color: oklch(0.52 0.015 90); flex-wrap:wrap;">
     <a href="https://www.cbl.or.jp/r-navi/" style="color:oklch(0.52 0.015 90);">ホーム</a><span aria-hidden="true">›</span><a href="index.html" style="color:oklch(0.52 0.015 90);">コラム</a><span aria-hidden="true">›</span><span aria-current="page" style="color:oklch(0.35 0.015 90);">第10回</span>
@@ -81,23 +80,16 @@
     </div>
   </header>
 
-  <figure style="margin:0;">
-    <image-slot id="ep10-fv" src="uploads/ep10_fv_next_stage_living_v2.png" shape="rounded" radius="18" alt="子どもの独立後、明るいリビングでお茶を飲みながら穏やかに語り合う50代以降の夫婦" placeholder="子どもの独立後の暮らしを穏やかに楽しむ夫婦" style="width:100%;aspect-ratio:16/9;"></image-slot>
-    <figcaption class="column-image-note">子どもが独立した後のリビングで、夫婦がこれからの時間を穏やかに過ごす。家の役割も、家族の変化に合わせて更新していきます。</figcaption>
-  </figure>
+  <image-slot id="ep10-fv" src="uploads/ep10_fv_next_stage_living_v2.png" shape="rounded" radius="18" alt="子どもの独立後、明るいリビングでお茶を飲みながら穏やかに語り合う50代以降の夫婦" placeholder="子どもの独立後の暮らしを穏やかに楽しむ夫婦" style="width:100%;aspect-ratio:16/9;"></image-slot>
 
-  <p style="font-size:17px; line-height:2; margin:32px 0 18px;">朝の食卓に並ぶのは、いつの間にか二人分の器になりました。二階には、独立した子どもが使っていた机や本棚が残っています。家を建てた頃、子ども部屋も、大きな食卓も、家族分の収納も、当時の暮らしを支えるために必要なものでした。</p>
-  <p style="font-size:17px; line-height:2; margin:0 0 18px;">けれど、子どもが独立し、夫婦の在宅時間や働き方が変わり、親の通院や介護が現実味を帯びると、家に求めるものも変わります。家づくりが失敗だったのではありません。<strong>子育てを支えるという設計当初の役割を果たし、家が次の段階に入った</strong>のです。</p>
-  <p style="font-size:17px; line-height:2; margin:0 0 32px;">「マイホームは、本当に幸せの完成形だったのか」。今回この問いを置くのは、持ち家や家族団らんを否定するためではありません。建てた時の家族像を守り続けるのではなく、<strong>今とこれからの自分たちの家族像に、家のほうを合わせ直す</strong>ためです。</p>
+  <p style="font-size:17px; line-height:2; margin:32px 0;">朝の食卓に並ぶのは、いつの間にか二人分の器になりました。二階には、独立した子どもの机や本棚が残っています。家を建てた頃の子ども部屋、大きな食卓、家族分の収納は、当時の暮らしを支えるために必要なものでした。けれど、子どもの独立、夫婦の働き方、親の通院や介護によって、家に求める役割も変わります。家づくりが失敗だったのではありません。<strong>子育てを支えるという設計当初の役割を果たし、家が次の段階に入った</strong>のです。今回は、建てた時の家族像に暮らしを合わせ続けるのではなく、<strong>今とこれからの自分たちの家族像に、家のほうを合わせ直す</strong>方法を考えます。</p>
 
   <aside style="background: oklch(0.95 0.03 150); border-radius:16px; padding:24px 26px; margin-bottom:36px;">
     <p style="font-family:'Zen Maru Gothic',sans-serif; font-weight:700; font-size:15px; margin:0 0 14px; color: oklch(0.35 0.09 155);">この記事のポイント</p>
     <ul style="margin:0; padding-left:20px; font-size:15.5px; line-height:1.9;">
       <li>子育て期に合っていた家も、家族が変われば「次の役割」を考える時期が来ます。</li>
-      <li>戦後に広がった家族像や間取りは、普遍的な正解ではなく、当時の暮らしに応えた一つの型でした。</li>
-      <li>夫婦が一緒に過ごす場所と、それぞれが仕事や趣味に集中できる場所の両方を考えます。</li>
-      <li>家族団らんだけでなく、家事の負担が一人に偏らない収納と動線も、住まいの大切な条件です。</li>
-      <li>空いた部屋、温熱環境、段差や水回りを、今・設備更新時・必要になった時の三段階で整えます。</li>
+      <li>夫婦が一緒に過ごす場所と一人になれる場所、家事の負担を減らす収納と動線を一緒に見直します。</li>
+      <li>空いた部屋、温熱環境、安全性を、今・設備更新時・必要になった時の三段階で整えます。</li>
     </ul>
   </aside>
 
@@ -113,10 +105,7 @@
     <p style="font-size:16.5px; line-height:1.95; margin:0 0 16px;">「夫婦と子どもが住む家」「リビングに集まる家」「子ども一人に一室」。こうした型は、家づくりを分かりやすくしてくれました。ただ、型が先にあると、子どもが巣立った後も「子ども部屋は子ども部屋のまま」でなければならないように感じてしまいます。<strong>間取りの名前は、暮らしに合わせて変えてよい</strong>のです。</p>
   </article>
 
-  <figure style="margin:8px 0 36px;">
-    <image-slot id="ep10-img-former-child-room" src="uploads/ep10_body01_former_child_room_v2.png" shape="rounded" radius="16" alt="独立した子どもの机や本が少し残り、これからの用途を考えられる余白のある明るい個室" placeholder="子どもの独立後に役割を見直す個室" style="width:100%;aspect-ratio:16/9;"></image-slot>
-    <figcaption class="column-image-note">思い出を少し残しながら、空いた子ども部屋を仕事、趣味、来客にも使える余白へ。部屋名より、これから受け止めたい時間から考えます。</figcaption>
-  </figure>
+  <image-slot id="ep10-img-former-child-room" src="uploads/ep10_body01_former_child_room_v2.png" shape="rounded" radius="16" alt="独立した子どもの机や本が少し残り、これからの用途を考えられる余白のある明るい個室" placeholder="子どもの独立後に役割を見直す個室" style="width:100%;aspect-ratio:16/9;margin:8px 0 36px;"></image-slot>
 
   <article>
     <h2 style="font-family:'Zen Maru Gothic',sans-serif; font-weight:700; font-size:21px; margin:0 0 16px;">3. 家族は変わり続けるのに、家だけを昔のままにしない</h2>
@@ -136,10 +125,7 @@
     <p style="font-size:16.5px; line-height:1.95; margin:0 0 16px;">夫婦の過ごし方にも同じ視点が必要です。一緒に食事や会話を楽しむ場所と、相手の気配を感じながら一人になれる場所。両方があれば、「いつも一緒」か「完全に別々」かの二択にせずに済みます。一方が自宅で仕事をするなら来客と生活の動線、もう一方が趣味を楽しむなら音、換気、収納、道具の搬入を確かめる。プロが見るのは部屋数だけではなく、<strong>家族それぞれの時間が無理なく共存できる境界</strong>です。</p>
   </article>
 
-  <figure style="margin:8px 0 36px;">
-    <image-slot id="ep10-img-adult-child-return" src="uploads/ep10_body03_adult_child_return_v2.png" shape="rounded" radius="16" alt="独立した成人の子どもが荷物を持って帰省し、50代以降の両親が戸建ての玄関で迎えている" placeholder="独立した子どもの帰省を迎える両親" style="width:100%;aspect-ratio:16/9;"></image-slot>
-    <figcaption class="column-image-note">独立した子どもの帰省や家族の短期滞在も、これからの住まいが受け止める時間の一つ。普段の暮らしを損なわず、迎えられる余白を残します。</figcaption>
-  </figure>
+  <image-slot id="ep10-img-adult-child-return" src="uploads/ep10_body03_adult_child_return_v2.png" shape="rounded" radius="16" alt="独立した成人の子どもが荷物を持って帰省し、50代以降の両親が戸建ての玄関で迎えている" placeholder="独立した子どもの帰省を迎える両親" style="width:100%;aspect-ratio:16/9;margin:8px 0 36px;"></image-slot>
 
   <article>
     <h2 style="font-family:'Zen Maru Gothic',sans-serif; font-weight:700; font-size:21px; margin:0 0 16px;">5. 空いた子ども部屋を、今と将来の「余白」に変える</h2>
@@ -154,10 +140,7 @@
     <p style="font-size:16.5px; line-height:1.95; margin:0 0 16px;"><a href="column-06.dc.html">第6回</a>で考えた一年を通じた温熱環境も、在宅時間が長くなるほど重要です。国土交通省の調査では、部屋間の温度差や床近くの低温と血圧などとの関連、断熱改修後の変化が報告されていますが、個々の健康状態まで住宅だけで決まるわけではありません（出典8）。断熱、暖冷房、換気を、医療の代わりではなく、暮らしの負担を減らす住環境の整備として考えます。</p>
   </article>
 
-  <figure style="margin:8px 0 36px;">
-    <image-slot id="ep10-img-step-free-hall" src="uploads/ep10_body02_step_free_hall_v2.png" shape="rounded" radius="16" alt="自然な高さの木製手すりと段差のない床が続く、明るい日本の戸建て住宅の廊下" placeholder="手すりと段差のない将来対応の廊下" style="width:100%;aspect-ratio:16/9;"></image-slot>
-    <figcaption class="column-image-note">住まいらしい佇まいを保ちながら、手すりと段差のない床で主要な動線を整える。必要になる前の下地や建具の検討も、将来の選択肢を広げます。</figcaption>
-  </figure>
+  <image-slot id="ep10-img-step-free-hall" src="uploads/ep10_body02_step_free_hall_v2.png" shape="rounded" radius="16" alt="自然な高さの木製手すりと段差のない床が続く、明るい日本の戸建て住宅の廊下" placeholder="手すりと段差のない将来対応の廊下" style="width:100%;aspect-ratio:16/9;margin:8px 0 36px;"></image-slot>
 
   <article>
     <h2 style="font-family:'Zen Maru Gothic',sans-serif; font-weight:700; font-size:21px; margin:0 0 16px;">7. 一度に完成させず、「今・更新時・必要時」に分ける</h2>
@@ -198,9 +181,7 @@
 
   <details style="margin-bottom:36px;">
     <summary style="font-size:13.5px; color:oklch(0.5 0.015 90);">出典・参考資料を見る</summary>
-    <div style="font-size:12.5px; line-height:1.8; color:oklch(0.5 0.015 90); margin-top:10px;">
-      <p style="margin:0 0 8px;">書籍は住まいと家族像を考える視点として参照し、統計、事故、安全性、改修上の配慮は公的機関の資料で確認しました。統計や制度は更新されるため、公開時にもリンクと公表内容を再確認してください。</p>
-      <ol style="padding-left:20px; margin:0;">
+    <ol style="font-size:12.5px; line-height:1.8; color:oklch(0.5 0.015 90); padding-left:20px; margin-top:10px;">
         <li><a href="https://www.kodansha.co.jp/book/products/0000146943">三浦展『「家族」と「幸福」の戦後史――郊外の夢と現実』</a>（講談社現代新書、1999年12月20日）――戦後の郊外、核家族、マイホームという生活モデルを考える手がかり。</li>
         <li><a href="https://crd.ndl.go.jp/reference/entry/index.php?id=1000330011&amp;page=ref_view">国立国会図書館 レファレンス協同データベース「51C型という住宅について知りたい。また、間取り図が見たい。」</a>――51C型、食寝分離、ダイニングキッチンの成立に関する参考文献案内。</li>
         <li><a href="https://www.gender.go.jp/about_danjo/whitepaper/r04/zentai/html/zuhyo/zuhyo02-15.html">内閣府男女共同参画局「共働き世帯数と専業主婦世帯数の推移」</a>（男女共同参画白書 令和4年版）。</li>
@@ -209,8 +190,7 @@
         <li><a href="https://www.mlit.go.jp/report/press/house07_hh_000202.html">国土交通省「高齢期の健康で快適な暮らしのための住まいの改修ガイドライン」</a>（2019年3月28日公表）。</li>
         <li><a href="https://www.caa.go.jp/policies/policy/consumer_safety/child/project_001/mail/20241219">消費者庁「高齢者の事故――冬の入浴中の溺水や食物での窒息に注意」</a>（2024年12月19日）。</li>
         <li><a href="https://www.mlit.go.jp/report/press/house07_hh_000198.html">国土交通省「断熱改修等による居住者の健康への影響調査 中間報告（第3回）」</a>（2019年1月24日）。</li>
-      </ol>
-    </div>
+    </ol>
   </details>
 
   <section style="margin-bottom:36px;">
@@ -226,14 +206,14 @@
     </div>
   </section>
 
-  <section data-related-articles hidden style="margin-bottom:44px;">
+  <section data-related-articles hidden data-related-limit="4" style="margin-bottom:44px;">
     <p style="font-family:'Zen Maru Gothic',sans-serif; font-weight:700; font-size:15px; margin:0 0 14px;">関連情報のご紹介</p>
     <div style="display:flex; flex-direction:column; gap:10px; font-size:14.5px;">
       <a href="column-02.dc.html">【第2回】片づかないのは、あなたのせいじゃない。収納と動線で変わる家</a>
       <a href="column-03.dc.html">【第3回】家族の気配が通う家。子どもと暮らす住まいの考え方</a>
       <a href="column-04.dc.html">【第4回】実家じまいは、親が元気なうちに。家族で考えるこれからの住まい</a>
       <a href="column-06.dc.html">【第6回】「夏をむねとすべし」は今も正解？一年を通じて快適な家</a>
-      <a href="column-07.dc.html">【第7回】リフォームで失敗しないために。見積もりと業者選びの基本</a>
+      <a href="column-01.dc.html">【第1回】家は資産か、負債か。暮らしから考える住まいの価値</a>
     </div>
   </section>
 
@@ -241,7 +221,7 @@
     <image-slot id="ep10-author-box" src="images/author-eisuke.png" shape="circle" alt="著者エイスケ" placeholder="著者エイスケ" style="width:56px;height:56px;flex:none;"></image-slot>
     <div>
       <p style="font-family:'Zen Maru Gothic',sans-serif; font-weight:700; font-size:14.5px; margin:0 0 6px;">この記事を書いた人｜エイスケ</p>
-      <p style="font-size:13px; line-height:1.75; color:oklch(0.48 0.015 90); margin:0;">1986年生まれ。実家の建築・不動産業に約10年間従事したのち、教育分野へ。住宅と教育の両面から、「豊かな暮らし」を考える視点をお伝えします。※本コラムは筆者個人の見解・経験に基づくものです。具体的な改修は、建物の状態、地域の制度、居住者の身体状況に応じて、建築・医療・介護など各分野の専門家へご相談ください。</p>
+      <p style="font-size:13px; line-height:1.75; color:oklch(0.48 0.015 90); margin:0;">1986年生まれ、40歳。実家の建築業・不動産に10年間従事したのち、教育の世界へ。住宅と教育、両方のプロの視点から「豊かな暮らし」をテーマに忖度なく切り込みます。※本コラムは筆者個人の見解・経験に基づくものです。最終的な判断は各分野の専門家にご相談ください。</p>
     </div>
   </div>
 
@@ -251,7 +231,7 @@
     <span style="color: oklch(0.62 0.015 90);">第10回が現在の最新回です</span>
   </nav>
 
-</main>
+</div>
 <?php include 'parts_footer.html'; ?>
 <dc-import name="SiteFooter" hint-size="100%,300px"></dc-import>
 
