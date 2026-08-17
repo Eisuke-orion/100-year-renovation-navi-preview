@@ -12,6 +12,16 @@
     "column-08.dc.html": "2026-09-08",
     "column-09.dc.html": "2026-09-10",
     "column-10.dc.html": "2026-09-15",
+    "column-11.dc.html": "2026-09-17",
+    "column-12.dc.html": "2026-09-22",
+    "column-13.dc.html": "2026-09-24",
+    "column-14.dc.html": "2026-09-29",
+    "column-15.dc.html": "2026-10-01",
+    "column-16.dc.html": "2026-10-06",
+    "column-17.dc.html": "2026-10-08",
+    "column-18.dc.html": "2026-10-13",
+    "column-19.dc.html": "2026-10-15",
+    "column-20.dc.html": "2026-10-20",
   });
 
   const previewParameter = "publication-preview-date";

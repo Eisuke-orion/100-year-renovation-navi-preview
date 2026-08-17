@@ -18,9 +18,9 @@
 <script src="js/common.js"></script>
 <script src="js/column-publication.js" defer></script>
 <title>ちょっと深い住まいの話｜印刷用</title>
-<meta name="description" content="ちょっと深い住まいの話、全10回の印刷用一覧です。">
+<meta name="description" content="ちょっと深い住まいの話、全20回の印刷用一覧です。">
 <meta property="og:title" content="ちょっと深い住まいの話｜印刷用">
-<meta property="og:description" content="ちょっと深い住まいの話、全10回の印刷用一覧です。">
+<meta property="og:description" content="ちょっと深い住まいの話、全20回の印刷用一覧です。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://cbl-rnavi-column.yuuuzo.chatgpt.site/legacy/column-top-print-1thkcsn.dc.html">
 <meta property="og:image" content="https://cbl-rnavi-column.yuuuzo.chatgpt.site/legacy/uploads/ep01_fv_asset_value_home.png">
@@ -37,6 +37,16 @@
 <meta name="ext-resource-dependency" content="uploads/ep09_fv_electricity_costs_home.png">
 <meta name="ext-resource-dependency" content="uploads/ep10_fv_typhoon_preparation_disaster_prevention.png">
 <meta name="ext-resource-dependency" content="uploads/ep10_fv_next_stage_living_v2.png">
+<meta name="ext-resource-dependency" content="uploads/ep11_fv_finance_table.png">
+<meta name="ext-resource-dependency" content="uploads/ep12_fv_mortgage_review.png">
+<meta name="ext-resource-dependency" content="uploads/ep13_fv_world_and_home.png">
+<meta name="ext-resource-dependency" content="uploads/ep14_fv_three_teacups.png">
+<meta name="ext-resource-dependency" content="uploads/ep15_fv_inheritance_calculation.png">
+<meta name="ext-resource-dependency" content="uploads/ep16_fv_long_mortgage_road.png">
+<meta name="ext-resource-dependency" content="uploads/ep17_fv_rent_or_own.png">
+<meta name="ext-resource-dependency" content="uploads/ep18_fv_exterior_maintenance.png">
+<meta name="ext-resource-dependency" content="uploads/ep19_fv_ai_floorplan.png">
+<meta name="ext-resource-dependency" content="uploads/ep20_fv_calm_child_room.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
@@ -97,7 +107,7 @@
     </div>
 
     <div style="display:grid; grid-template-columns: repeat(3,1fr); gap:20px;">
-      <sc-for list="{{ visibleEpisodes }}" as="ep" hint-placeholder-count="10">
+      <sc-for list="{{ visibleEpisodes }}" as="ep" hint-placeholder-count="20">
         <a href="{{ ep.href }}" style="display:flex; flex-direction:column; background:#fff; border:1px solid oklch(0.89 0.02 85); border-radius:16px; overflow:hidden; box-shadow:0 1px 2px oklch(0.3 0.02 90/0.05);">
           <div style="width:100%;height:150px;overflow:hidden;flex:none;">
             <image-slot id="{{ ep.thumbId }}" src="{{ ep.thumb }}" shape="rect" placeholder="FVサムネイル" style="width:100%;height:100%;"></image-slot>
@@ -132,18 +142,28 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script>
 const EPISODES = [
-  { n: '1', href: 'column-01.dc.html', title: '住まい方ひとつで、家は資産にも負債にもなる', excerpt: '『LIFE SHIFT』で読み解く、本当に価値のある家とは。連載の総論です。', category: '資産・お金', thumb: 'uploads/ep01_fv_asset_value_home.png' },
-  { n: '2', href: 'column-02.dc.html', title: '片づかないのは、あなたのせいじゃない', excerpt: '『人生がときめく片づけの魔法』に、工務店の視点を一つ足す。', category: '片づけ・収納', thumb: 'uploads/ep02_fv_storage_flow_v2.png' },
-  { n: '3', href: 'column-03.dc.html', title: '家族の気配が通う家。子どもと暮らす住まいの考え方', excerpt: '家族の気配が通う間取りと、子どもの育ちを支える住まいを考える。', category: '家族・子育て', thumb: 'uploads/ep04_fv_family_connection_living_stairs.png' },
-  { n: '4', href: 'column-04.dc.html', title: '「実家じまい」は、親が元気なうちに', excerpt: '空き家900万戸時代の、一番現実的な備え。', category: '実家・空き家', thumb: 'uploads/ep05_fv_family_home_closure.png' },
-  { n: '5', href: 'column-05.dc.html', title: 'あなたのマンション、40年後も建っていますか', excerpt: '「限界マンション」という次の空き家問題。', category: '実家・空き家', thumb: 'uploads/ep06_fv_long_life_condominium.png' },
-  { n: '6', href: 'column-06.dc.html', title: '「夏をむねとすべし」は今も正解？一年を通じて快適な家', excerpt: '年間の断熱・気密と夏の日射対策を組み合わせる。', category: '省エネ・快適', thumb: 'uploads/ep07_fv_cool_summer_home.png' },
-  { n: '7', href: 'column-07.dc.html', title: '失敗しないリフォーム', excerpt: '「適正価格」を見抜き、信頼できる業者と出会うために。', category: 'リフォーム・業者選び', thumb: 'uploads/ep08_fv_trusted_remodeling_consultation.png' },
-  { n: '8', href: 'column-08.dc.html', title: '電気代は、なぜ上がり続けるのか', excerpt: '構造的な理由と、我が家でできる本気の節電。', category: '省エネ・快適', thumb: 'uploads/ep09_fv_electricity_costs_home.png' },
-  { n: '9', href: 'column-09.dc.html', title: '台風の季節、防災の日に考える「家を守る」', excerpt: '怖がるためではなく、「備えておいたから大丈夫」と思える暮らしのために。', category: '防災', thumb: 'uploads/ep10_fv_typhoon_preparation_disaster_prevention.png' },
-  { n: '10', href: 'column-10.dc.html', title: '50代から考える、家族構成の変化に対応できる住まい', excerpt: '子育て期の役割を終えた家を、夫婦の居場所、親との関わり、短い動線に合わせて使い直す。', category: '家族・間取り', thumb: 'uploads/ep10_fv_next_stage_living_v2.png' },
+  { n: '1', href: 'column-01.dc.html', title: '家は資産か、負債か。暮らしから考える住まいの価値', excerpt: '「よりよい住まいを」本当に価値ある家とは。連載の総論です。', category: '資産・お金', thumb: 'uploads/ep01_fv_asset_value_home.png' },
+  { n: '2', href: 'column-02.dc.html', title: '片づかないのは、あなたのせいじゃない。収納と動線で変わる家', excerpt: '収納量だけでなく、使う場所と戻す動線から片づく仕組みを考えます。', category: '片づけ・収納', thumb: 'uploads/ep02_fv_storage_flow_v2.png' },
+  { n: '3', href: 'column-03.dc.html', title: '家族の気配が通う家。子どもと暮らす住まいの考え方', excerpt: '家族の気配が通う間取りと、子どもの育ちを支える住まいを考えます。', category: '家族・子育て', thumb: 'uploads/ep04_fv_family_connection_living_stairs.png' },
+  { n: '4', href: 'column-04.dc.html', title: '実家じまいは、親が元気なうちに。家族で考えるこれからの住まい', excerpt: '実家のこれからを、親が元気なうちに家族で話し始めます。', category: '実家・空き家', thumb: 'uploads/ep05_fv_family_home_closure.png' },
+  { n: '5', href: 'column-05.dc.html', title: 'マンションの老いにどう備えるか。長く暮らすための住まいの条件', excerpt: '建物と管理の両面から、マンションに長く暮らす条件を確かめます。', category: '実家・空き家', thumb: 'uploads/ep06_fv_long_life_condominium.png' },
+  { n: '6', href: 'column-06.dc.html', title: '「夏をむねとすべし」は今も正解？一年を通じて快適な家', excerpt: '年間の断熱・気密と夏の日射対策を組み合わせます。', category: '省エネ・快適', thumb: 'uploads/ep07_fv_cool_summer_home.png' },
+  { n: '7', href: 'column-07.dc.html', title: 'リフォームで失敗しないために。見積もりと業者選びの基本', excerpt: '見積もりの内訳を読み、信頼できる事業者を選ぶ基本です。', category: 'リフォーム・業者選び', thumb: 'uploads/ep08_fv_trusted_remodeling_consultation.png' },
+  { n: '8', href: 'column-08.dc.html', title: '電気代が高く感じられる理由。窓と家電から始める節電', excerpt: '電気代の背景と、窓・家電から始める現実的な節電を考えます。', category: '省エネ・快適', thumb: 'uploads/ep09_fv_electricity_costs_home.png' },
+  { n: '9', href: 'column-09.dc.html', title: '台風の前に、家族で決めておくこと。家の外・中・避難の備え', excerpt: '家の外・中・避難を分け、台風の前に家族で備えます。', category: '防災', thumb: 'uploads/ep10_fv_typhoon_preparation_disaster_prevention.png' },
+  { n: '10', href: 'column-10.dc.html', title: '50代から考える、家族構成の変化に対応できる住まい', excerpt: '今とこれからの家族像に、家のほうを合わせ直します。', category: '家族・間取り', thumb: 'uploads/ep10_fv_next_stage_living_v2.png' },
+  { n: '11', href: 'column-11.dc.html', title: '新NISAと住宅ローン、どっちが先？──50代の「お金の置き場所」を、住まいの目線で考える', excerpt: '繰り上げ返済・新NISA・住まいへの投資を、確実性と目的から整理します。', category: '資産・お金', thumb: 'uploads/ep11_fv_finance_table.png' },
+  { n: '12', href: 'column-12.dc.html', title: '変動金利が上がる前に──繰り上げ返済か、価値を上げるリフォームか', excerpt: '変動金利の仕組みを確かめ、繰り上げ返済と性能向上を同じ家計で考えます。', category: '資産・お金', thumb: 'uploads/ep12_fv_mortgage_review.png' },
+  { n: '13', href: 'column-13.dc.html', title: '円安が続くと、家はどうなる？──資材・光熱費・資産価値への影響を、3分の基礎から読み解く', excerpt: '円安と住まいの関係を、輸入資材、エネルギー、長く使う設計から読み解きます。', category: '住まい×経済', thumb: 'uploads/ep13_fv_world_and_home.png' },
+  { n: '14', href: 'column-14.dc.html', title: '5000万円以下でも、相続はもめる──「うちは関係ない」が危ない“争族”の話', excerpt: '司法統計を手がかりに、家が中心の相続で話し合いが難しくなる構造を考えます。', category: '相続・実家', thumb: 'uploads/ep14_fv_three_teacups.png' },
+  { n: '15', href: 'column-15.dc.html', title: '家を建てたら知ってほしい相続税──モデル家庭で、いくらかかる？', excerpt: '相続税の計算をモデル家庭でたどり、家の評価と特例を正しく理解します。', category: '相続・税', thumb: 'uploads/ep15_fv_inheritance_calculation.png' },
+  { n: '16', href: 'column-16.dc.html', title: '50年ローンは本当に大丈夫か──住宅のプロが、真剣に検証してみた', excerpt: '50年ローンの月額と総額、完済年齢、住宅性能をモデル試算で確認します。', category: '住宅ローン', thumb: 'uploads/ep16_fv_long_mortgage_road.png' },
+  { n: '17', href: 'column-17.dc.html', title: '賃貸か持ち家か、結局どっちが得なのか──損得を、最後まで計算してみた', excerpt: '賃貸と持ち家を同じ前提で試算し、費用以外の価値とリスクも整理します。', category: '資産・お金', thumb: 'uploads/ep17_fv_rent_or_own.png' },
+  { n: '18', href: 'column-18.dc.html', title: '「老後2000万円」より怖い、家の修繕費問題──一生でいくらかかるのか、部位別に積み上げてみた', excerpt: '戸建ての修繕を部位と時期で整理し、わが家の維持保全年表をつくります。', category: '維持管理', thumb: 'uploads/ep18_fv_exterior_maintenance.png' },
+  { n: '19', href: 'column-19.dc.html', title: '理想の住まいづくりに、AIを活用せよ──間取りも業者選びも、もう“お任せ”じゃない', excerpt: '間取りや見積もりの整理にAIを使い、現地判断は専門家へつなぐ方法を紹介します。', category: '住まいづくり', thumb: 'uploads/ep19_fv_ai_floorplan.png' },
+  { n: '20', href: 'column-20.dc.html', title: '発達特性と住まい──子どもが安心できる部屋のつくり方', excerpt: '光、音、落ち着ける居場所、見える収納から、家族みんなが過ごしやすい環境を考えます。', category: '家族・子育て', thumb: 'uploads/ep20_fv_calm_child_room.png' },
 ];
-const PAGE_SIZE = 10;
+const PAGE_SIZE = 20;
 
 class Component extends DCLogic {
   state = { category: 'すべて', visible: PAGE_SIZE };
